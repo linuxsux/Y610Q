@@ -1,0 +1,7 @@
+parm TXS-txn4.prmtop
+trajin QM_MM/TXS-txn4_qmmm.rst7
+trajout TXS-txn4_qmmm.pdb PDB
+
+center :1-789
+image familiar
+go

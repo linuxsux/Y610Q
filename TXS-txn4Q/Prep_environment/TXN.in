@@ -1,0 +1,5 @@
+source leaprc.gaff
+TXN=loadmol2 ../ligand_files/TXN.mol2
+loadamberparams ../ligand_files/TXN.frcmod
+saveoff TXN ../ligand_files/TXN.lib
+quit
