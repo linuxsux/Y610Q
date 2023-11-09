@@ -1,0 +1,97 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) CCconfig         4) imkl/2020.1.217    7) libfabric/1.10.1
+  2) gentoo/2020      5) intel/2020.1.217   8) openmpi/4.0.3
+  3) gcccore/.9.3.0   6) ucx/1.8.0          9) StdEnv/2020
+
+Lmod is automatically replacing "intel/2020.1.217" with "gcc/9.3.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) libfabric/1.10.1     2) openmpi/4.0.3     3) ucx/1.8.0
+
+The environment has already been set by the module.
+Not making any changes.
+cdr2552.int.cedar.computecanada.ca.167970psmi_cuda_initialize: Unable to find active CUDA context
+cdr2513.int.cedar.computecanada.ca.113797psmi_cuda_initialize: Unable to find active CUDA context
+cdr2553.int.cedar.computecanada.ca.208881psmi_cuda_initialize: Unable to find active CUDA context
+cdr2562.int.cedar.computecanada.ca.210280psmi_cuda_initialize: Unable to find active CUDA context
+cdr2521.int.cedar.computecanada.ca.201460psmi_cuda_initialize: Unable to find active CUDA context
+cdr2549.int.cedar.computecanada.ca.130143psmi_cuda_initialize: Unable to find active CUDA context
+cdr2561.int.cedar.computecanada.ca.2350psmi_cuda_initialize: Unable to find active CUDA context
+cdr2535.int.cedar.computecanada.ca.179136psmi_cuda_initialize: Unable to find active CUDA context
+
+CPPTRAJ: Trajectory Analysis. V5.1.0 OpenMP
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| 1 OpenMP threads available.
+| Date/time: 11/09/23 15:38:03
+| Available memory: 138.373 GB
+
+INPUT: Reading input from 'QM_MM/to_pdb.in'
+  [parm TXS-txn4.prmtop]
+	Reading 'TXS-txn4.prmtop' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin QM_MM/TXS-txn4_qmmm.rst7]
+	Reading 'QM_MM/TXS-txn4_qmmm.rst7' as Amber NC Restart
+  [trajout TXS-txn4_qmmm.pdb PDB]
+	Writing 'TXS-txn4_qmmm.pdb' as PDB
+  [center :1-789]
+    CENTER: Centering coordinates using geometric center of atoms in mask (:1-789) to
+	box center.
+  [image familiar]
+    IMAGE: By molecule to box center based on first atom position using all atoms
+           Triclinic On, familiar shape.
+  [go]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: TXS-txn4.prmtop, 129018 atoms, 39778 res, box: Truncated octahedron, 38995 mol, 38711 solvent
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'TXS-txn4_qmmm.rst7' is a NetCDF AMBER restart file with coordinates, velocities, time, replica indices, coordinate indices, box, Parm TXS-txn4.prmtop (Truncated octahedron box) (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'TXS-txn4_qmmm.pdb' (1 frames) is a PDB file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'TXS-txn4.prmtop' (2 actions):
+  0: [center :1-789]
+	Mask [:1-789] corresponds to 12607 atoms.
+  1: [image familiar]
+	Mask [*] corresponds to 129018 atoms.
+	Number of molecules to be imaged is 38995
+Warning: No PDB space group specified.
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  TXS-txn4_qmmm.pdb (coordinates, velocities, time, replica indices, coordinate indices, box)
+----- TXS-txn4_qmmm.rst7 (1-1, 1) -----
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 1.4171 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.00%)
+TIME:		Trajectory Process : 0.7056 s ( 99.69%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0021 s (  0.00%)
+TIME:	Run Total 0.7078 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 1.2300 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
